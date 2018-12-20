@@ -17,3 +17,39 @@ To github.com:fdrennan/wall_fund_linkedin.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ]0;~/Documents/R/linkedin_wall_fundDigitals-MacBook-Pro:linkedin_wall_fund digitalfirstmedia$ git ad [Kd --all
+]0;~/Documents/R/linkedin_wall_fundDigitals-MacBook-Pro:linkedin_wall_fund digitalfirstmedia$ git commit -m 'update
+> g[K'
+[master 69a09d3] update
+ 19 files changed, 263 insertions(+)
+ create mode 100644 .Rhistory
+ create mode 100644 .Rproj.user/F5514539/console06/400A93F2
+ create mode 100644 .Rproj.user/F5514539/console06/400A93F2.env
+ create mode 100644 .Rproj.user/F5514539/console06/INDEX001
+ create mode 100644 .Rproj.user/F5514539/pcs/files-pane.pper
+ create mode 100644 .Rproj.user/F5514539/pcs/source-pane.pper
+ create mode 100644 .Rproj.user/F5514539/pcs/windowlayoutstate.pper
+ create mode 100644 .Rproj.user/F5514539/pcs/workbench-pane.pper
+ create mode 100644 .Rproj.user/F5514539/rmd-outputs
+ create mode 100644 .Rproj.user/F5514539/saved_source_markers
+ create mode 100644 .Rproj.user/F5514539/sources/prop/42C54ED6
+ create mode 100644 .Rproj.user/F5514539/sources/prop/INDEX
+ create mode 100644 .Rproj.user/F5514539/sources/s-9E045048/D33C21F9
+ create mode 100644 .Rproj.user/F5514539/sources/s-9E045048/D33C21F9-contents
+ create mode 100644 .Rproj.user/F5514539/sources/s-9E045048/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 linkedin_wall_fund.Rproj
+ create mode 100644 wall_data.R
+]0;~/Documents/R/linkedin_wall_fundDigitals-MacBook-Pro:linkedin_wall_fund digitalfirstmedia$ git push origin master
+Enumerating objects: 29, done.
+Counting objects:   3% (1/29)   Counting objects:   6% (2/29)   Counting objects:  10% (3/29)   Counting objects:  13% (4/29)   Counting objects:  17% (5/29)   Counting objects:  20% (6/29)   Counting objects:  24% (7/29)   Counting objects:  27% (8/29)   Counting objects:  31% (9/29)   Counting objects:  34% (10/29)   Counting objects:  37% (11/29)   Counting objects:  41% (12/29)   Counting objects:  44% (13/29)   Counting objects:  48% (14/29)   Counting objects:  51% (15/29)   Counting objects:  55% (16/29)   Counting objects:  58% (17/29)   Counting objects:  62% (18/29)   Counting objects:  65% (19/29)   Counting objects:  68% (20/29)   Counting objects:  72% (21/29)   Counting objects:  75% (22/29)   Counting objects:  79% (23/29)   Counting objects:  82% (24/29)   Counting objects:  86% (25/29)   Counting objects:  89% (26/29)   Counting objects:  93% (27/29)   Counting objects:  96% (28/29)   Counting objects: 100% (29/29)   Counting objects: 100% (29/29), done.
+Delta compression using up to 8 threads.
+Compressing objects:   4% (1/23)   Compressing objects:   8% (2/23)   Compressing objects:  13% (3/23)   Compressing objects:  17% (4/23)   Compressing objects:  21% (5/23)   Compressing objects:  26% (6/23)   Compressing objects:  30% (7/23)   Compressing objects:  34% (8/23)   Compressing objects:  39% (9/23)   Compressing objects:  43% (10/23)   Compressing objects:  47% (11/23)   Compressing objects:  52% (12/23)   Compressing objects:  56% (13/23)   Compressing objects:  60% (14/23)   Compressing objects:  65% (15/23)   Compressing objects:  69% (16/23)   Compressing objects:  73% (17/23)   Compressing objects:  78% (18/23)   Compressing objects:  82% (19/23)   Compressing objects:  86% (20/23)   Compressing objects:  91% (21/23)   Compressing objects:  95% (22/23)   Compressing objects: 100% (23/23)   Compressing objects: 100% (23/23), done.
+Writing objects:   3% (1/28)   Writing objects:   7% (2/28)   Writing objects:  10% (3/28)   Writing objects:  14% (4/28)   Writing objects:  17% (5/28)   Writing objects:  21% (6/28)   Writing objects:  25% (7/28)   Writing objects:  28% (8/28)   Writing objects:  32% (9/28)   Writing objects:  35% (10/28)   Writing objects:  39% (11/28)   Writing objects:  42% (12/28)   Writing objects:  46% (13/28)   Writing objects:  50% (14/28)   Writing objects:  53% (15/28)   Writing objects:  57% (16/28)   Writing objects:  60% (17/28)   Writing objects:  64% (18/28)   Writing objects:  67% (19/28)   Writing objects:  71% (20/28)   Writing objects:  75% (21/28)   Writing objects:  78% (22/28)   Writing objects:  82% (23/28)   Writing objects:  85% (24/28)   Writing objects:  89% (25/28)   Writing objects:  92% (26/28)   Writing objects:  96% (27/28)   Writing objects: 100% (28/28)   Writing objects: 100% (28/28), 4.94 KiB | 93.00 KiB/s, done.
+Total 28 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), done.[K
+To github.com:fdrennan/wall_fund_linkedin.git
+   b809570..69a09d3  master -> master
+^C
+]0;~/Documents/R/linkedin_wall_fund[?1034hDigitals-MacBook-Pro:linkedin_wall_fund digitalfirstmedia$ 
+]0;~/Documents/R/linkedin_wall_fundDigitals-MacBook-Pro:linkedin_wall_fund digitalfirstmedia$ git add --all

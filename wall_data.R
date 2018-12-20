@@ -2,15 +2,17 @@ library(RPostgreSQL)
 library(DBI)
 library(rvest)
 library(tidyverse)
-
+library(lubridate)
 
 # From https://www.gofundme.com/TheTrumpWall
 
 # Table rows are stored in order in which they were obtained. 
-# I am in Mexico currently so the times vs/amount will look a little off
+# I am in Mexico currently so the times vs. amount will look a little off
 # as I the times I stored in the data base working locally in Mexico are
 # different from the CRON on AWS in OHIO. You can resolve the time difference if you like or 
 # just use the values after ROW 32. 
+
+# ^^ Update ^^ Cleaned it up for ya!
 
 clean_money = function(string) {
   str_remove_all(string, "\\,") %>% 
@@ -36,7 +38,18 @@ WHERE <- "1=1"
 query <- paste("SELECT", SELECT, "FROM", FROM, "WHERE", WHERE)
 
 data = tbl(con, sql(query)) %>%
-  as.data.frame %>% 
-  mutate(amt = clean_money(amt))
+  as.data.frame 
+
+data %>% 
+  arrange(amt) %>% 
+  mutate(amt = clean_money(amt),
+         time = case_when(
+                  time < "2018-12-20 08:50:20" ~ time + hours(6),
+                  TRUE                         ~ time
+                ),
+         diff = amt - lag(amt)
+         )
+
+
 
 
