@@ -40,15 +40,23 @@ query <- paste("SELECT", SELECT, "FROM", FROM, "WHERE", WHERE)
 data = tbl(con, sql(query)) %>%
   as.data.frame 
 
-data %>% 
+data =
+  data %>% 
   arrange(amt) %>% 
   mutate(amt = clean_money(amt),
+         time = ymd_hms(time),
          time = case_when(
                   time < "2018-12-20 08:50:20" ~ time + hours(6),
                   TRUE                         ~ time
                 ),
-         diff = amt - lag(amt)
-         )
+         diff = amt - lag(amt),
+         minute = format(time, "%M"),
+         a_ten = (as.numeric(minute) %% 10) == 0
+         ) %>% 
+    filter(a_ten) %>% 
+  filter(time != "2018-12-20 19:50:54")
+
+plot(data)
 
 
 
