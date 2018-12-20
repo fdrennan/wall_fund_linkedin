@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1545335560662.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "D33C21F9",
+    "lastKnownWriteTime" : 1545335823,
+    "last_content_update" : 1545335840757,
+    "path" : "~/Documents/R/linkedin_wall_fund/wall_data.R",
+    "project_path" : "wall_data.R",
+    "properties" : {
+        "cursorPosition" : "9,44",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
