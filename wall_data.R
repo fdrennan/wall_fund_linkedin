@@ -40,7 +40,7 @@ query <- paste("SELECT", SELECT, "FROM", FROM, "WHERE", WHERE)
 data = tbl(con, sql(query)) %>%
   as.data.frame 
 
-data =
+cleaned_data =
   data %>% 
   arrange(amt) %>% 
   mutate(amt = clean_money(amt),
@@ -50,11 +50,22 @@ data =
                 ),
          diff = amt - lag(amt),
          minute = format(time, "%M"),
-         a_ten = (as.numeric(minute) %% 10) == 0) %>%
+         a_ten = (as.numeric(minute) %% 10) == 0,
+         day = as.character(day(time))) %>%
     filter(a_ten) %>%
-  filter(time != "2018-12-20 19:50:54") %>%
-  select(-minute, -a_ten)
+  filter(time != "2018-12-20 19:50:54",
+         time != '2018-12-20 10:50:20') %>%
+  select(-minute, -a_ten) %>% 
+  filter(diff < 900000)
 
-plot(data)
+
+
+options(scipen=10000)
+ggplot(cleaned_data) +
+  aes(x = time, y = diff, colour = day) + 
+  geom_point() +
+  xlab("Time") +
+  ylab("Contribution") +
+  ggtitle("10 Minute Contribution Amount")
 
 
